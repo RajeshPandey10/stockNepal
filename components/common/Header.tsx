@@ -1,0 +1,17 @@
+import Image from "next/image"
+import Link from "next/link"
+
+
+const Header = () => {
+  return (
+    <header className="sticky top-0 header">
+        <div className="container header-wrapper">
+            <Link href="/" >
+                <Image src="/assets/icons/logo.png" alt="stocknepal-logo" width={150} height={25} className=" h-20 w-auto cursor-pointer" />
+            </Link>
+        </div>
+    </header>
+  )
+}
+
+export default Header
